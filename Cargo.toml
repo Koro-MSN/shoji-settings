@@ -1,0 +1,13 @@
+[package]
+name = "shoji-settings"
+version = "0.3.2"
+edition = "2021"
+description = "ShojiWM の詳細設定アプリ（AntiWebUI + Material 3 Expressive）"
+
+[dependencies]
+anti-webui = { git = "https://github.com/bea4dev/AntiWebUI.git", branch = "main" }
+anti-webui-md3e = { git = "https://github.com/bea4dev/AntiWebUI.git", branch = "main" }
+serde_json = "1"
+
+[profile.release]
+lto = "thin"
